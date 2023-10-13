@@ -54,6 +54,7 @@ transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0)
 shape = SubResource("18")
 
 [node name="Ground" type="MeshInstance3D" parent="ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0161795, -0.19866, 0.0100756)
 mesh = SubResource("2")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("5_m2ykm")

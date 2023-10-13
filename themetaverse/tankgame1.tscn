@@ -37,6 +37,7 @@ tracker = &"right_hand"
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0107085, 0.00237338, 0.00437261)
 mesh = SubResource("PlaneMesh_n5np4")
 surface_material_override/0 = ExtResource("1_4wjot")
 

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyjxfwj62w7tj"]
+
+[ext_resource type="Script" path="res://circles_of_things.gd" id="1_r30y3"]
+[ext_resource type="PackedScene" uid="uid://c2tg7eq7cepef" path="res://dod.tscn" id="2_jiveb"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xngok"]
+
+[node name="root" type="Node3D"]
+script = ExtResource("1_r30y3")
+dod = ExtResource("2_jiveb")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.00816805, 0.999967, 0, -0.999967, -0.00816805, 0, 21.4961, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -14.3461, -2.5601, -4.17956)
+mesh = SubResource("PlaneMesh_xngok")
